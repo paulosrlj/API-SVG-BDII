@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá</h1>
+
+    <section class='city-form'>
+        <form>
+            <input name='nome' type='text' placeholder="Type the city here">
+            <button type="submit">Show</button>
+        </form>
+    </section>
+
+    <section class='show-svg'>
+        <svg height="400" width="400" style="background:red"
+            >
+
+            <path fill="green" />
+        </svg>
+    </section>
+
+    <script src='js/showSvg.js'></script>
+</body>
+</html>
