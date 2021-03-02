@@ -11,5 +11,6 @@ route.get('/', (req, res) => {
 
 route.get('/getSvg/:nome', svg.getSVG);
 route.get('/getViewBox/:nome',svg.getViewBox);
+route.get('/getPopulation/:cod_city', svg.getPopulation);
 
 module.exports = route;

@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+table,
+th,
+td {
+  border: 2px solid #ddd;
+  border-collapse: collapse;
+  margin: 15px;
+  padding: 5px;
+}
+
+th {
+  background-color: rgb(173, 216, 230);
+}
+
+td {
+  background-color: #FFB5C5;
+}
+
+table {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+form,
+input[type="text"],
+select,
+label {
+  background: #ddd;
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  background-color: #ddd;
+  margin-bottom: 20px;
+
+}
+
+input[type="text"],
+select,
+label {
+  border-bottom: 1px solid #EE00EE;
+  outline: none;
+}
+
+button {
+  padding: 8px 19px 8px 19px;
+  color: #ddd;
+  background-color: #EE00EE;
+  font-size: 15px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  border-width: 1px 1px 1px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+.geral {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.desenho {
+  margin: 40px;
+}
