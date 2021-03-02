@@ -5,7 +5,7 @@ const getSVG = (request, response) => {
   const municipio = request.params.nome;
 
   pool.query(
-    "SELECT ST_AsSVG(geom) FROM municipios WHERE nome ilike $1",
+    "SELECT ST_AsSVG(geom) FROM municipio WHERE nome ilike $1",
     [municipio],
     (error, results) => {
       if (error) {

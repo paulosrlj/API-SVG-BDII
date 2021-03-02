@@ -5,46 +5,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cidadesno IBGE</title>
 
     <style>
         * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
 
-        body {
-            height: 100vh;
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+    }
+    table, th, td {
+        border: 2px solid #ddd;
+        border-collapse: collapse;
+        margin: 15px;
+        padding: 5px;
+    }
+    th{
+        background-color: rgb(173,216,230);
+    }
+    td{
+        background-color: #FFB5C5;
+    }
+    table{
+        align-self: center;
+        margin-left: auto; 
+        margin-right: auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    form, input[type="text"], select, label{
+        background: #ddd;
+        border: none;
+        font-size: 16px;
+        height: auto;
+        margin: 0;
+        padding: 5px;
+        width: 100%;
+        background-color: #ddd;
+        margin-bottom: 20px;
+        
+    }
+    input[type="text"], select, label{
+        border-bottom: 1px solid #EE00EE;
+    }
+    button {
+        padding: 8px 19px 8px 19px;
+        color: #ddd;
+        background-color: #EE00EE;
+        font-size: 15px;
+        text-align: center;
+        font-style: normal;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        border-width: 1px 1px 1px;
+        box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+        margin-bottom: 10px;
+    }
+    .geral{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+    .informacoes{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
 
-
-        }
+    .desenho{
+        margin: 40px;
+    }
     </style>
 </head>
 
 <body>
-    <h1>Olá</h1>
+    <div class='geral'>
+        <div class='informacoes'>
+            <div>
+                <h1>Olá</h1>
+                    <section class='city-form'>
+                        <form>
+                            <label for="estados">Selecione o estado:</label>
+                            <select id="estados" name="estado">
+                            <option value="PB">PB</option>
+                            <option value="AM">AM</option>
+                            <option value="RS">RS</option>
+                            <option value="SP">SP</option>
+                            </select>
+                            <label for="nome">Digite o nome da cidade:</label>
+                            <input name='nome' type='text' placeholder="Type the city here">
+                            <button type="submit">Show</button>
+                        </form>
+                    </section>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                      <th>Estado</th>
+                      <th>Cidade</th> 
+                      <th>População</th>
+                      <th>Área</th>
+                    </tr>
+                    <tr>
+                      <td>...</td>
+                      <td>...</td>
+                      <td>...</td>
+                      <td>...</td>
+                    </tr>
+                  </table>
+                <!-- informacoes da cidade e/ou do estado-->
+            </div>
+        </div>
+        <div>
+            <section class='show-svg'>
+                <svg height="500" width="500" style="background:rgb(135,206,250)" stroke="rgb(139,0,139)" stroke-width="0.001">
 
-    <section class='city-form'>
-        <form>
-            <input name='nome' type='text' placeholder="Type the city here">
-            <button type="submit">Show</button>
-        </form>
-    </section>
-
-    <section class='show-svg'>
-        <svg height="400" width="400" style="background:red"
-            >
-
-            <path fill="green" />
-        </svg>
-    </section>
-
-    <script src='js/showSvg.js'></script>
+                    <path fill="rgb(0,154,250)" />
+                </svg>
+            </section>
+        </div>
+            <script src='js/showSvg.js'></script>
+    </div>
 </body>
 </html>
